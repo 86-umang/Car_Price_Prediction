@@ -13,16 +13,17 @@
   <body class="body">
     <div class="container">
         <div class="row">
-            <div class="mt-50" style="width: 100%; height: 100%">
+            <div class="mt-50 col-12" style="width: 100%; height: 100%">
                 <div class="header">
                     <div class="col-12" style="text-align: center">
                         <h1> Welcome to Car Price Predictor</h1>
                     </div>
                 </div>
-                <div class="body_1">
-
-                    <form method="post" accept-charset="utf-8">
-                        <div class="col-10 form-group" style="text-align: left">
+            </div>
+            <div class="body_1 col-12">
+                <form method="post" class="fom" accept-charset="utf-8">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 form-group" style="text-align: left">
                             <img src="static/css/Icon/car-manufacturing (1).png" alt="" class="img">
                             <label><b style="font-size:20px;">Select Company: </b></label>
                             <select class="selectpicker form-control" name="company" id="company" required="1"
@@ -34,7 +35,7 @@
                             </select>
                         </div>
 
-                        <div class="col-10 form-group" style="text-align: left">
+                        <div class="col-12 col-sm-6 form-group" style="text-align: left">
                             <img src="static/css/Icon/model.png" alt="" class="img">
                             <label><b style="font-size:20px;">Select Model: </b></label>
                             <select class="selectpicker form-control" name="car_model" id="car_model" required="1">
@@ -42,7 +43,9 @@
                             </select>
                         </div>
 
-                        <div class="col-10 form-group" style="text-align: left">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-4 form-group" style="text-align: left">
                             <img src="static/css/Icon/timetable.png" alt="" class="img">
                             <label><b style="font-size:20px;">Select Year of Purchase: </b></label>
                             <select class="selectpicker form-control" name="year" id="year" required="1">
@@ -53,7 +56,7 @@
                             </select>
                         </div>
 
-                        <div class="col-10 form-group" style="text-align: left">
+                        <div class="col-12 col-sm-4 form-group" style="text-align: left">
                             <img src="static/css/Icon/seller.png" alt="" class="img">
                             <label><b style="font-size:20px;">Select Seller Type: </b></label>
                             <select class="selectpicker form-control" name="seller_type" id="seller_type" required="1">
@@ -64,7 +67,7 @@
                             </select>
                         </div>
 
-                        <div class="col-10 form-group" style="text-align: left">
+                        <div class="col-12 col-sm-4 form-group" style="text-align: left">
                             <img src="static/css/Icon/owner.png" alt="" class="img">
                             <label><b style="font-size:20px;">Select Owner Type: </b></label>
                             <select class="selectpicker form-control" name="owner_type" id="owner_type" required="1">
@@ -74,8 +77,10 @@
                                 {% endfor %}
                             </select>
                         </div>
+                    </div>
 
-                        <div class="col-10 form-group" style="text-align: left">
+                    <div class="row">
+                        <div class="col-12 col-sm-4 form-group" style="text-align: left">
                             <img src="static/css/Icon/gas-pump.png" alt="" class="img">
                             <label><b style="font-size:20px;">Select Fuel Type: </b></label>
                             <select class="selectpicker form-control" name="fuel_type" id="fuel_type" required="1">
@@ -86,7 +91,7 @@
                             </select>
                         </div>
 
-                        <div class="col-10 form-group" style="text-align: left">
+                        <div class="col-12 col-sm-4 form-group" style="text-align: left">
                             <img src="static/css/Icon/manual-transmission.png" alt="" class="img">
                             <label><b style="font-size:20px;">Select Transmission Type: </b></label>
                             <select class="selectpicker form-control" name="transmission_type" id="transmission_type"
@@ -98,7 +103,7 @@
                             </select>
                         </div>
 
-                        <div class="col-10 form-group" style="text-align: left">
+                        <div class="col-12 col-sm-4 form-group" style="text-align: left">
                             <img src="static/css/Icon/car-seat.png" alt="" class="img">
                             <label><b style="font-size:20px;">Seats: </b></label>
                             <select class="selectpicker form-control" name="seats" id="seats" required="1">
@@ -108,50 +113,57 @@
                                 {% endfor %}
                             </select>
                         </div>
+                    </div>
 
-                        <div class="col-10 form-group" style="text-align: left">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 form-group" style="text-align: left">
                             <img src="static/css/Icon/kmh.png" alt="" class="img">
                             <label><b style="font-size:20px;">Enter Number of Kilometers travelled: </b></label>
                             <input class="form-control" type="text" id="kilo_driven" name="kilo_driven"
                                 placeholder="Enter no. of kilometers travelled" required="1" style="font-weight:bold">
                         </div>
 
-                        <div class="col-10 form-group" style="text-align: left">
+                        <div class="col-12 col-sm-6 form-group" style="text-align: left">
                             <img src="static/css/Icon/speedometer (1).png" alt="" class="img">
                             <label><b style="font-size:20px;">Mileage (kmpl): </b></label>
                             <input class="form-control" type="text" id="mileage" name="mileage" placeholder="Mileage"
                                 required="1" style="font-weight:bold">
                         </div>
+                    </div>
 
-                        <div class="col-10 form-group" style="text-align: left">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 form-group" style="text-align: left">
                             <img src="static/css/Icon/car.png" alt="" class="img">
                             <label><b style="font-size:20px;">Engine (CC): </b></label>
                             <input class="form-control" type="text" id="engine" name="engine" placeholder="Engine"
                                 required="1" style="font-weight:bold">
                         </div>
 
-                        <div class="col-10 form-group" style="text-align: left">
+                        <div class="col-12 col-sm-6 form-group" style="text-align: left">
                             <img src="static/css/Icon/car-battery.png" alt="" class="img">
                             <label><b style="font-size:20px;">Max Power (bhp): </b></label>
                             <input class="form-control" type="text" id="max_power" name="max_power"
                                 placeholder="Max Power" required="1" style="font-weight:bold">
                         </div>
-
-                        <div class="col-10 form-group" style="text-align: center">
-                            <button class="btn btn-primary form-control" onClick="send_data()">Predict Price</button>
-                        </div>
-
-                    </form>
-                    <br>
-
-                    <div class="row">
-                        <div class="col-12" style="text-align: center">
-                            <h3><span id="prediction"></span></h3>
-                        </div>
                     </div>
 
-                </div>
+
+
+                    <div class="col-12 form-group" style="text-align: center">
+                        <button id="prediction" class="btn btn-primary form-control" onClick="send_data()">Predict Price</button>
+                    </div>
+
+                </form>
+                <br>
+
+<!--                <div class="row">-->
+<!--                    <div class="col-12 mb-50" style="text-align: center">-->
+<!--                        <h3><span id="prediction"></span></h3>-->
+<!--                    </div>-->
+<!--                </div>-->
+
             </div>
+
         </div>
     </div>
 
